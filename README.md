@@ -1,28 +1,40 @@
-# Email Spam Detection (SMS Spam) - Simple Example
+# 📧 Machine Learning Email / SMS Spam Detection
 
-This project shows a minimal SMS spam detection pipeline using Python and scikit-learn.
+A simple **Machine Learning project** that detects **spam vs ham (not spam)** messages using **text classification** techniques in **Python** with **scikit-learn**.
 
-Quick start
+This project demonstrates a complete ML pipeline including data loading, text preprocessing, feature extraction, model training, and prediction.
 
-1. (Optional) Place the full dataset in the project folder as `spam.csv` or `SMSSpamCollection`.
-2. Install dependencies:
+---
 
-```powershell
-pip install -r requirements.txt
-```
+## 🚀 Features
 
-3. Run the script to train and evaluate using the included small sample dataset:
+- Spam detection using **Naive Bayes**
+- Text vectorization using **TF-IDF**
+- Supports SMS / Email-style text
+- Beginner-friendly implementation
+- Fast and lightweight execution
 
-```powershell
-python spam_detector.py
-```
+---
 
-4. Predict a custom message after training:
+## 🧠 Machine Learning Workflow
 
-```powershell
-python spam_detector.py --predict "You've won a prize, reply now"
-```
+1. Load the SMS Spam dataset  
+2. Preprocess and clean text  
+3. Convert text into numerical features (TF-IDF)  
+4. Train a classification model  
+5. Predict spam or ham messages  
 
-Notes
-- The script will prefer `spam.csv` or `SMSSpamCollection` if present; otherwise it uses `sample_sms.csv`.
-- `spam.csv` from some sources may contain extra columns; the loader attempts to handle common formats.
+---
+
+## 📂 Project Structure
+
+```text
+MACHINE-LEARNING-EMAIL-SPAM-DETECTION/
+│
+├── spam_detector.py          # Main Python script for training & prediction
+├── sample_sms.csv            # Sample SMS dataset
+├── SMSSpamCollection         # Full SMS Spam Collection dataset
+├── smsspamcollection.zip     # Zipped version of dataset
+├── requirements.txt          # Project dependencies
+├── run.log                   # Program execution logs
+├── README.md                 # Project documentation
